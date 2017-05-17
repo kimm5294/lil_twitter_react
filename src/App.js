@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <section>
+        <header id="top-nav">
+          <div id="brand">Lil Twitter API</div>
+          <form id="search-form">
+            <input id="search" type="text" name="query"></input>
+          </form>
+          <i className="fa fa-search"></i>
+        </header>
+
+        <section className="container">
+          <section id="tweet-box">
+            <p id="tweet-box-title">Compose New Tweet</p>
+            <form id="tweet-form">
+              <textarea id="new-tweet" cols="30" rows="5" maxLength="140" name="tweet"></textarea>
+              <input type="submit" value="Tweet"></input>
+            </form>
+          </section>
+
+          <section id="trends-container">
+            <h3>Trends</h3>
+            <ul>
+              <li>filler</li>
+            </ul>
+          </section>
+
+          <section id="tweets-container">
+
+          </section>
+
+        </section>
+      </section>
     );
   }
 }
